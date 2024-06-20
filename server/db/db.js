@@ -6,7 +6,7 @@ const Mongo_URL =
 const startDB = async()=>{
     try{
 await mongoose
-  .connect(Mongo_URL)
+  .connect("mongodb+srv://admin:admin@cluster0.rzivqe2.mongodb.net/?retryWrites=true&w=majority")
   .then(() => {
     console.log("Connected to MongoDB");
   })
